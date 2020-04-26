@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <ng-content></ng-content>
+        <span>Project Title</span>
+        <span class="example-spacer"></span>
+        <a class="example-link" routerLink="/" mat-button>Home</a>
+        <a class="example-link" routerLink="/" mat-button>Posts</a>
+        <mat-slide-toggle [checked]="isThemeDark" (change)="toggleDarkTheme($event.checked)">Dark theme</mat-slide-toggle>
+    </mat-toolbar-row>
+</mat-toolbar>
