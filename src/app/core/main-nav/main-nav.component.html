@@ -7,9 +7,9 @@
             <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
               <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
              </button>
-            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" fxHide.xs="true">
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-    </button>
+            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" fxHide.lt-md="true">
+                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
         </app-header>
         <section>
             <router-outlet></router-outlet>
